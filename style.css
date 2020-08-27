@@ -1,0 +1,350 @@
+body {
+  font-size: 15px;
+  color: rgb(73, 73, 73);
+}
+
+button {
+  background: #ffc600;
+  border: 0;
+  padding: 10px 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Wrapper */
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: auto auto auto  ; 
+  justify-content: center;
+}
+
+nav {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 80px 1fr 3fr 1fr;
+  justify-self: left;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  left: 0;
+  height: 45px;
+  background: white;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.menu-items {
+  
+}
+
+.menu-logo {
+  font-size: 16px;
+  justify-self: center;
+  align-content: center;
+}
+
+.menu-title {
+  font-size: 14px;
+  justify-self: left;
+}
+
+.left-btns {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  justify-self: left;
+  width: 4rem;
+  margin-left: 30px;
+}
+
+.right-btns {
+  justify-self: right;
+  margin-right: 30px;
+}
+
+.menu-btns {
+  cursor: pointer;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: rgb(86, 123, 149);
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: all 0.6s ease 0s;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(50, 104, 145);
+  border-image: initial;
+  padding: 11px 12px 8px;
+}
+
+/* Main section */
+main {
+  margin-top: 50px;
+  text-align: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-rows: auto;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.main-heading > h1 {
+  max-width: 500px;
+  text-align: left;
+  font-family: 'Aladin', cursive;
+  font-style: italic;
+  font-size: 40px;
+}
+
+img {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  font-family: 'Aladin', cursive;
+  font-style: italic;
+}
+
+main p {
+  text-align: left;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+h3, p + p {
+  line-height: 28px;
+  /* margin-bottom: -50px; */
+}
+
+.content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: min-content auto;
+  /* grid-template-rows: min-content auto; */
+  grid-gap: 20px;
+  margin: 0 50px 0 50px;
+  text-align: left;
+  max-width: 600px;
+}
+
+.img-info {
+  max-width: 800px;
+  margin-top: 0;
+  font-size: 12px;
+  justify-self: left;
+}
+
+.author {
+  justify-self: left;
+  justify-items: left;
+  text-align: left;
+  max-width: 1000px;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 7fr repeat(6, minmax(50px, 1fr) );
+  justify-items: right;
+  align-items: center;
+  justify-content: end;
+}
+
+.social > span {
+  font-size: 12px;
+  grid-column: auto;
+  justify-self: start;
+}
+
+.social-icons {
+  justify-self: end;
+}
+
+.inflation {
+  max-width: 1000px;
+  display: grid;
+  grid-gap: 10px;
+  margin-top: 5rem;
+  justify-self: center;
+}
+
+.inflation-texts {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  margin-top: -28rem;
+  min-width: 800px;
+}
+
+.img-text {
+  margin-bottom: 12rem;
+  font-size: 12px;
+}
+
+.content-2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: auto;
+  /* grid-template-rows: min-content auto; */
+  grid-gap: 20px;
+  margin: 0 50px 0 50px;
+  text-align: left;
+  max-width: 600px;
+  justify-self: center;
+  font-size: 18px;
+}
+
+.content-2 > span {
+  font-size: 12px;
+}
+
+.bootom-img {
+  justify-self: center;
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    justify-items: end;
+  justify-content: space-around;
+}
+.gallery__con {
+  border-top: 1px solid black;
+}
+.gallery__con1 {
+  border-top: 1px solid black;
+  grid-area: 1 / 2 / 2 / 4;
+}
+.gallery__con2 {
+  border-top: 1px solid black;
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.gallery__content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+
+.gallery__item {  
+  width: 200px;
+  height: auto;
+} 
+
+.gallery__link {
+  text-decoration: none;
+  color: rgb(73, 73, 73);
+}
+
+.gallery__link:hover {
+  color: rgb(180, 180, 180);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__menus {
+  display: grid;
+  grid-template-columns: repeat( 6, minmax(200px, 1fr) )
+}
+
+.footer__menuitems {
+  display: grid;
+  align-content: baseline;
+  padding: 5px;
+}
+
+.footer__links {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: rgb(219, 219, 219) !important;
+  font-size: 12px;
+}
+
+
+
+
+.css-1pv1u79 {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  min-width: 26px;
+  min-height: 14px;
+  position: relative;
+  width: auto;
+  background: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(102, 102, 102);
+  border-image: initial;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.css-1d50gvk {
+  align-self: center;
+  background-color: transparent;
+  bottom: 0.05rem;
+  color: rgb(102, 102, 102);
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  height: 25px;
+  line-height: 1rem;
+  margin-left: 2px;
+  min-width: 24px;
+  position: relative;
+  text-transform: uppercase;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  overflow: visible;
+  padding: 0px 0px 4px;
+}
+
+.css-1pv1u79::before {
+  bottom: -7px;
+  content: "";
+  display: block;
+  left: 15px;
+  position: absolute;
+  width: 0px;
+  border-color: rgb(102, 102, 102) transparent;
+  border-style: solid;
+  border-width: 6px 0px 0px 8px;
+}
+.css-1pv1u79::after {
+  bottom: -6px;
+  content: "";
+  display: block;
+  left: 16px;
+  position: absolute;
+  width: 0px;
+  border-color: rgb(255, 255, 255) transparent;
+  border-style: solid;
+  border-width: 6px 0px 0px 6px;
+}
